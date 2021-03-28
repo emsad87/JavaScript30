@@ -1,0 +1,104 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: #018ded;
+  background-size: cover;
+  font-family: "helvetica neue";
+  text-align: center;
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  font-size: 2rem;
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.clock {
+  position: relative;
+  margin: 50px auto;
+  padding: 2rem;
+  width: 30rem;
+  height: 30rem;
+  border: 10px solid white;
+  border-radius: 5%;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 2px 2px rgba(0, 0, 0, 0.2), 0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.05);
+}
+.clock .clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.clock .hand {
+  position: absolute;
+  top: 50%;
+  width: 50%;
+  height: 5px;
+  background: black;
+  transform-origin: 100% 50%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+  border-radius: 5px;
+}
+.clock .tick-none {
+  transition: none;
+}
+.clock .hour-hand {
+  left: 15%;
+  width: 35%;
+}
+.clock .second-hand {
+  background: white;
+}
+.clock .mark12,
+.clock .mark6,
+.clock .mark3,
+.clock .mark9 {
+  position: absolute;
+  background: gray;
+  border-radius: 5px;
+}
+.clock .mark12,
+.clock .mark6 {
+  left: 50%;
+  width: 5px;
+  height: 20px;
+}
+.clock .mark3,
+.clock .mark9 {
+  top: 50%;
+  width: 20px;
+  height: 5px;
+}
+.clock .mark12 {
+  top: 0;
+}
+.clock .mark6 {
+  bottom: 0;
+}
+.clock .mark3 {
+  right: 0;
+}
+.clock .mark9 {
+  left: 0;
+}
+.clock .hand-cover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
