@@ -1,0 +1,19 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  background-color: blueviolet;
+
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2rem;
+}
+
+.button {
+  padding: 15px 30px;
+  color: white;
+  background-color: blue;
+  border-radius: 7px;
+}
