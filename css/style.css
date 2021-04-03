@@ -1,2 +1,33 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/*# sourceMappingURL=style.css.map */
+body {
+  margin: 0;
+  padding: 25px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5rem;
+  color: white;
+  background-color: midnightblue;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li a {
+  display: inline-block;
+  padding: 15px;
+  background-color: blue;
+  border-radius: 10px;
+  margin: 15px;
+}

@@ -1,5 +1,9 @@
 export function removeTransition(e) {
+  // At long button press Becomes too fast so at a moment it does not recognize transform
+  // and the if statement becomes true and returns.
+  console.log("beforeeventlist");
   if (e.propertyName !== "transform") return;
+  console.log("after eventlist");
   e.target.classList.remove("playing");
 }
 
@@ -11,4 +15,7 @@ export function playSound(e) {
   key.classList.add("playing");
   audio.currentTime = 0;
   audio.play();
+
+  // Showing pressed key element in console
+  // console.log(e);
 }
