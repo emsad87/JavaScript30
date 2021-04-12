@@ -23,12 +23,31 @@ a {
 
 ul {
   list-style: none;
-}
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
 
-ul li a {
-  display: inline-block;
-  padding: 15px;
-  background-color: blue;
-  border-radius: 10px;
-  margin: 15px;
+  li {
+    width: 300px;
+  }
+
+  a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    background-color: lighten($color: midnightblue, $amount: 20);
+    border-radius: 10px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 2px 2px rgba(0, 0, 0, 0.2),
+      0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.1),
+      0 16px 16px rgba(0, 0, 0, 0.05);
+  }
+
+  .number {
+    font-size: 5rem;
+  }
+  .text {
+  }
 }
