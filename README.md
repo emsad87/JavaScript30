@@ -1,3 +1,3 @@
 # JavaScript30 by Emsad
 
-Inspired by Wes Bos 30day JavaScript challenge at [JavaScript30.com](https://javascript30.com/)
+30 Day Vanilla JS Coding Challenge by Wes Bos at [JavaScript30.com](https://javascript30.com/)
